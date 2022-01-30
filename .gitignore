@@ -1,0 +1,7 @@
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+
+.gitsecret/keys/random_seed
+!*.secret
+envs/prod.tfvars
