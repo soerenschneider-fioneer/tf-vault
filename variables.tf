@@ -1,3 +1,8 @@
+variable "ssh_allowed_domains" {
+  type    = list(string)
+  default = []
+}
+
 variable "approles" {
   type = list(object({
     role_name             = string
