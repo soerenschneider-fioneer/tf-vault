@@ -21,3 +21,8 @@ variable "allow_subdomains" {
   type    = bool
   default = false
 }
+
+variable "algorithm" {
+  type    = string
+  default = "rsa-sha2-512"
+}

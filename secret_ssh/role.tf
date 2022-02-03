@@ -8,4 +8,5 @@ resource "vault_ssh_secret_backend_role" "host_key_sign" {
   max_ttl                 = var.max_ttl
   allowed_domains         = join(",", var.allowed_domains)
   allow_subdomains        = coalesce(var.allow_subdomains, false)
+  algorithm_signer        = var.algorithm
 }
