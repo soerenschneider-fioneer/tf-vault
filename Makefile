@@ -9,6 +9,7 @@ pre-commit-update:
 	pre-commit autoupdate
 
 decrypt:
+	test -f envs/prod.tfvars && false || true
 	test -f envs/prod.tfvars.secret && git secret reveal -f || true
 
 tf-init:
