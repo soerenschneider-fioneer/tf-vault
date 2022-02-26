@@ -61,4 +61,6 @@
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_prometheus_token"></a> [prometheus\_token](#output\_prometheus\_token) | n/a |
