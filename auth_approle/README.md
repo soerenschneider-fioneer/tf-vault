@@ -2,13 +2,13 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 3.2.1 |
+| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 3.3.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_vault"></a> [vault](#provider\_vault) | 3.2.1 |
+| <a name="provider_vault"></a> [vault](#provider\_vault) | 3.3.1 |
 
 ## Modules
 
@@ -18,10 +18,10 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [vault_approle_auth_backend_role.approle](https://registry.terraform.io/providers/hashicorp/vault/3.2.1/docs/resources/approle_auth_backend_role) | resource |
-| [vault_identity_entity.approle_identity](https://registry.terraform.io/providers/hashicorp/vault/3.2.1/docs/resources/identity_entity) | resource |
-| [vault_identity_entity_alias.approle_identity_alias](https://registry.terraform.io/providers/hashicorp/vault/3.2.1/docs/resources/identity_entity_alias) | resource |
-| [vault_policy.approle_rotation](https://registry.terraform.io/providers/hashicorp/vault/3.2.1/docs/resources/policy) | resource |
+| [vault_approle_auth_backend_role.approle](https://registry.terraform.io/providers/hashicorp/vault/3.3.1/docs/resources/approle_auth_backend_role) | resource |
+| [vault_identity_entity.approle_identity](https://registry.terraform.io/providers/hashicorp/vault/3.3.1/docs/resources/identity_entity) | resource |
+| [vault_identity_entity_alias.approle_identity_alias](https://registry.terraform.io/providers/hashicorp/vault/3.3.1/docs/resources/identity_entity_alias) | resource |
+| [vault_policy.approle_rotation](https://registry.terraform.io/providers/hashicorp/vault/3.3.1/docs/resources/policy) | resource |
 
 ## Inputs
 

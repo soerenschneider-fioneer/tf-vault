@@ -3,13 +3,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.70.0 |
-| <a name="requirement_vault"></a> [vault](#requirement\_vault) | ~> 3.2.1 |
+| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 3.3.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_vault"></a> [vault](#provider\_vault) | 3.2.1 |
+| <a name="provider_vault"></a> [vault](#provider\_vault) | 3.3.1 |
 
 ## Modules
 
@@ -28,17 +28,17 @@
 
 | Name | Type |
 |------|------|
-| [vault_audit.file](https://registry.terraform.io/providers/vault/latest/docs/resources/audit) | resource |
-| [vault_auth_backend.approle](https://registry.terraform.io/providers/vault/latest/docs/resources/auth_backend) | resource |
-| [vault_auth_backend.userpass](https://registry.terraform.io/providers/vault/latest/docs/resources/auth_backend) | resource |
-| [vault_generic_endpoint.user](https://registry.terraform.io/providers/vault/latest/docs/resources/generic_endpoint) | resource |
-| [vault_identity_group.approle](https://registry.terraform.io/providers/vault/latest/docs/resources/identity_group) | resource |
-| [vault_mount.kv](https://registry.terraform.io/providers/vault/latest/docs/resources/mount) | resource |
-| [vault_policy.admin](https://registry.terraform.io/providers/vault/latest/docs/resources/policy) | resource |
-| [vault_quota_rate_limit.auth](https://registry.terraform.io/providers/vault/latest/docs/resources/quota_rate_limit) | resource |
-| [vault_quota_rate_limit.global](https://registry.terraform.io/providers/vault/latest/docs/resources/quota_rate_limit) | resource |
-| [vault_quota_rate_limit.kv](https://registry.terraform.io/providers/vault/latest/docs/resources/quota_rate_limit) | resource |
-| [vault_quota_rate_limit.userpass](https://registry.terraform.io/providers/vault/latest/docs/resources/quota_rate_limit) | resource |
+| [vault_audit.file](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/audit) | resource |
+| [vault_auth_backend.approle](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/auth_backend) | resource |
+| [vault_auth_backend.userpass](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/auth_backend) | resource |
+| [vault_generic_endpoint.user](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/generic_endpoint) | resource |
+| [vault_identity_group.approle](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/identity_group) | resource |
+| [vault_mount.kv](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/mount) | resource |
+| [vault_policy.admin](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/policy) | resource |
+| [vault_quota_rate_limit.auth](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/quota_rate_limit) | resource |
+| [vault_quota_rate_limit.global](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/quota_rate_limit) | resource |
+| [vault_quota_rate_limit.kv](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/quota_rate_limit) | resource |
+| [vault_quota_rate_limit.userpass](https://registry.terraform.io/providers/vault/3.3.1/docs/resources/quota_rate_limit) | resource |
 
 ## Inputs
 
