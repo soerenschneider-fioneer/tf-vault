@@ -2,6 +2,7 @@
 *.tfstate
 *.tfstate.*
 
+/output/
 .gitsecret/keys/random_seed
 !*.secret
 envs/prod.tfvars
