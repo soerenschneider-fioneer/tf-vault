@@ -1,15 +1,13 @@
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 3.3.0 |
+No requirements.
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_local"></a> [local](#provider\_local) | n/a |
-| <a name="provider_vault"></a> [vault](#provider\_vault) | 3.3.0 |
+| <a name="provider_vault"></a> [vault](#provider\_vault) | n/a |
 
 ## Modules
 
@@ -21,16 +19,16 @@ No modules.
 |------|------|
 | [local_file.ca_file_vault](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
 | [local_file.signed_intermediate](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
-| [vault_mount.pki_intermediate](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/mount) | resource |
-| [vault_mount.pki_root](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/mount) | resource |
-| [vault_pki_secret_backend_config_urls.config_urls](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/pki_secret_backend_config_urls) | resource |
-| [vault_pki_secret_backend_intermediate_cert_request.intermediate](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/pki_secret_backend_intermediate_cert_request) | resource |
-| [vault_pki_secret_backend_intermediate_set_signed.intermediate](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/pki_secret_backend_intermediate_set_signed) | resource |
-| [vault_pki_secret_backend_role.role](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/pki_secret_backend_role) | resource |
-| [vault_pki_secret_backend_root_cert.root](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/pki_secret_backend_root_cert) | resource |
-| [vault_pki_secret_backend_root_sign_intermediate.intermediate](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/pki_secret_backend_root_sign_intermediate) | resource |
-| [vault_policy.pki_boyscout](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/policy) | resource |
-| [vault_policy.role](https://registry.terraform.io/providers/hashicorp/vault/3.3.0/docs/resources/policy) | resource |
+| [vault_mount.pki_intermediate](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/mount) | resource |
+| [vault_mount.pki_root](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/mount) | resource |
+| [vault_pki_secret_backend_config_urls.config_urls](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/pki_secret_backend_config_urls) | resource |
+| [vault_pki_secret_backend_intermediate_cert_request.intermediate](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/pki_secret_backend_intermediate_cert_request) | resource |
+| [vault_pki_secret_backend_intermediate_set_signed.intermediate](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/pki_secret_backend_intermediate_set_signed) | resource |
+| [vault_pki_secret_backend_role.role](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/pki_secret_backend_role) | resource |
+| [vault_pki_secret_backend_root_cert.root](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/pki_secret_backend_root_cert) | resource |
+| [vault_pki_secret_backend_root_sign_intermediate.intermediate](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/pki_secret_backend_root_sign_intermediate) | resource |
+| [vault_policy.pki_boyscout](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/policy) | resource |
+| [vault_policy.role](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/policy) | resource |
 
 ## Inputs
 
