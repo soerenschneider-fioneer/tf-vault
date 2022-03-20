@@ -1,3 +1,6 @@
+docs:
+	for dir in */; do cd $dir; terraform-docs markdown . > README.md; cd -; done
+
 encrypt:
 	test -f envs/prod.tfvars && git secret hide -F
 	rm -vf envs/prod.tfvars
