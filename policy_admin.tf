@@ -7,6 +7,12 @@ path "auth/*"
   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
 
+# Read audit methods
+path "sys/audit"
+{
+  capabilities = ["read", "list", "sudo"]
+}
+
 # Create, update, and delete auth methods
 path "sys/auth/*"
 {
@@ -48,10 +54,31 @@ path "sys/mounts*"
   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
 
+# Manage quotas
+path "sys/quotas/*"
+{
+  capabilities = ["create", "read", "update", "delete", "list"]
+}
+
 # Read health checks
 path "sys/health"
 {
   capabilities = ["read", "sudo"]
+}
+
+path "aws/*"
+{
+  capabilities = ["create", "read", "update", "delete", "list"]
+}
+
+path "identity/*"
+{
+  capabilities = ["create", "read", "update", "delete", "list"]
+}
+
+path "ssh/*"
+{
+  capabilities = ["create", "read", "update", "delete", "list"]
 }
 EOT
 }
