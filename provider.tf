@@ -10,6 +10,9 @@ terraform {
       source  = "aws"
       version = "~> 3.70.0"
     }
+    local = {
+      source = "hashicorp/local"
+    }
   }
 
   backend "s3" {
