@@ -4,7 +4,7 @@ terraform {
   required_providers {
     vault = {
       source  = "vault"
-      version = "3.3.1"
+      version = "3.4.0"
     }
     aws = {
       source  = "aws"
