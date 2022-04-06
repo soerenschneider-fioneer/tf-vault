@@ -38,7 +38,7 @@ resource "vault_pki_secret_backend_root_sign_intermediate" "ica2_signed_intermed
   province             = var.ica_2_csr_province
 
   max_path_length = 0
-  ttl             = local.default_1y_in_sec
+  ttl             = 31536000
 }
 
 resource "vault_pki_secret_backend_intermediate_set_signed" "ica2_signed_intermediate" {
