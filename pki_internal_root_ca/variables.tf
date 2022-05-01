@@ -64,7 +64,7 @@ variable "intermediate_mount_max_ttl" {
 }
 
 variable "intermediate_ttl" {
-  type = number
+  type    = number
   default = 86400 * 365 * 3
 }
 
@@ -103,11 +103,13 @@ variable "intermediate_private_key_format" {
 
 variable "backend_roles" {
   type = list(object({
-    name             = string
-    ttl              = optional(number)
-    key_type         = optional(string)
-    key_bits         = optional(number)
-    allowed_domains  = list(string)
-    allow_subdomains = optional(bool)
+    name               = string
+    ttl                = optional(number)
+    max_ttl            = optional(number),
+    key_type           = optional(string)
+    key_bits           = optional(number)
+    allowed_domains    = list(string)
+    allow_subdomains   = optional(bool)
+    allow_bare_domains = optional(bool),
   }))
 }
