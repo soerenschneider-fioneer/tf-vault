@@ -15,8 +15,8 @@ resource "vault_approle_auth_backend_role" "approle" {
   token_policies        = concat([vault_policy.approle_rotation.name], try(each.value.token_policies, []))
   token_max_ttl         = coalesce(each.value.token_max_ttl, local.default_token_ttl_seconds)
   token_ttl             = coalesce(each.value.token_ttl, each.value.token_max_ttl, local.default_token_ttl_seconds)
-  token_bound_cidrs     = try(coalescelist(each.value.token_bound_cidrs, var.name_cidr_regex != null ? var.cidr_map[regex(var.name_cidr_regex, each.value.role_name)[0]] : []), [])
-  secret_id_bound_cidrs = try(coalescelist(each.value.secret_id_bound_cidrs, var.name_cidr_regex != null ? var.cidr_map[regex(var.name_cidr_regex, each.value.role_name)[0]] : []), [])
+  token_bound_cidrs     = coalescelist(each.value.token_bound_cidrs,     try(var.cidr_map[regex(var.name_cidr_regex, each.value.role_name)[0]], []), [])
+  secret_id_bound_cidrs = coalescelist(each.value.secret_id_bound_cidrs, try(var.cidr_map[regex(var.name_cidr_regex, each.value.role_name)[0]], []), [])
   secret_id_ttl         = coalesce(each.value.secret_id_ttl, local.default_secret_id_ttl_seconds)
   secret_id_num_uses    = coalesce(each.value.secret_id_num_uses, local.default_secret_id_num_uses)
 }
