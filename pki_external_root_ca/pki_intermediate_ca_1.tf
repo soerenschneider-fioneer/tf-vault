@@ -27,15 +27,15 @@ resource "local_file" "csr" {
 }
 
 data "local_file" "cacert" {
-  count    = fileexists(var.ica_1_cacert_file) ? 1 : 0
+  count = fileexists(var.ica_1_cacert_file) ? 1 : 0
 
   filename = var.ica_1_cacert_file
 }
 
 resource "vault_pki_secret_backend_intermediate_set_signed" "intermediate_ca_1_signed_cert" {
-  count      = fileexists(var.ica_1_cacert_file) ? 1 : 0
+  count = fileexists(var.ica_1_cacert_file) ? 1 : 0
 
-  depends_on = [vault_mount.intermediate_ca_1]
-  backend    = vault_mount.intermediate_ca_1.path
+  depends_on  = [vault_mount.intermediate_ca_1]
+  backend     = vault_mount.intermediate_ca_1.path
   certificate = data.local_file.cacert[0].content
 }
