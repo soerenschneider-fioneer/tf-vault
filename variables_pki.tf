@@ -29,3 +29,8 @@ variable "pki_im_organization" {
 variable "pki_im_ou" {
   type = string
 }
+
+variable "pki_allowed_token_domains" {
+  type = list(string)
+  default = []
+}
