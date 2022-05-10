@@ -60,12 +60,12 @@ variable "intermediate_mount_path" {
 
 variable "intermediate_mount_max_ttl" {
   type    = number
-  default = 86400 * 2
+  default = 86400 * 365 * 3
 }
 
 variable "intermediate_ttl" {
   type    = number
-  default = 86400 * 365 * 3
+  default = 86400 * 2
 }
 
 variable "intermediate_common_name" {
