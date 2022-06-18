@@ -3,32 +3,6 @@ variable "ssh_allowed_domains" {
   default = []
 }
 
-variable "approles" {
-  type = list(object({
-    role_name             = string
-    role_id               = optional(string)
-    token_policies        = optional(list(string))
-    token_max_ttl         = optional(number)
-    token_ttl             = optional(number)
-    token_bound_cidrs     = optional(list(string))
-    secret_id_ttl         = optional(number)
-    secret_id_num_uses    = optional(number)
-    secret_id_bound_cidrs = optional(list(string))
-    identity_metadata     = optional(map(string))
-    groups                = optional(list(string))
-  }))
-}
-
-variable "groups" {
-  type = list(object({
-    name     = string
-    policies = optional(list(string))
-  }))
-  default = [
-    { name = "fileserver", policies = ["occult"] }
-  ]
-}
-
 variable "acme_server_cidrs" {
   type    = list(string)
   default = []
